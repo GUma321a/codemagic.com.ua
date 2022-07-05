@@ -1,0 +1,14 @@
+@layer base{
+
+  html{
+    @apply scroll-smooth;
+  }
+
+  body{
+    @apply font-primary font-normal leading-150 bg-third-light text-white;
+  }
+
+  a{
+    @apply inline-block;
+  }
+}

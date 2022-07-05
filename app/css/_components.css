@@ -1,0 +1,67 @@
+@layer components{
+
+  /* Typography */
+  .heading-h1{
+    @apply font-primary font-semibold text-74 leading-127 tracking-tight;
+  }
+  .heading-h2{
+    @apply font-primary font-medium text-40 leading-145;
+  }
+  .heading-h3{
+    @apply font-primary font-medium text-32 leading-150;
+  }
+  .heading-h4{
+    @apply font-secondary font-medium text-20 leading-145;
+  }
+  
+  
+  .body-text-xl{
+    @apply font-primary font-normal text-20 leading-160;
+  }
+  .body-text-l{
+    @apply font-primary font-normal text-20 leading-160;
+  }
+  .body-text-m{
+    @apply font-primary font-normal text-24 leading-150;
+  }
+  .body-text-s{
+    @apply font-primary font-normal text-14 leading-143;
+  }
+
+  .button-link-s{
+    @apply font-primary font-medium text-16 leading-150 tracking-tight;
+  }
+
+  .caprion-s{
+    @apply font-primary font-medium text-16 leading-150 tracking-tightest;
+  }
+
+  .menu-link{
+    @apply font-secondary font-medium text-16 leading-150;
+  }
+
+
+
+  /* Buttons */
+  /* .button-cta-l{
+    @apply button-link-s text-center text-white bg-primary-light rounded-8 py-[17px] px-[28px] transition-colors hover:bg-primary-normal active:bg-primary-dark;
+  } */
+  .button-cta-m{
+    @apply button-link-s text-center text-white bg-button rounded-43 py-[17px] px-2xl;
+  }
+
+  /* .button-primary-l{
+    @apply button-link-l text-center text-white bg-primary-dark rounded-8 py-[17px] px-[28px] transition-colors hover:bg-primary-light active:bg-primary-normal;
+  }
+  .button-primary-m{
+    @apply button-link-m text-center text-white bg-primary-dark rounded-6 py-[14px] px-md transition-colors hover:bg-primary-light active:bg-primary-normal;
+  }
+
+  .button-ghost-l{
+    @apply button-link-l text-center text-black bg-maingray rounded-8 py-[17px] px-[28px] transition-colors hover:bg-primary-light hover:text-white active:bg-primary-light active:text-white;
+  }
+  .button-ghost-m{
+    @apply button-link-l text-center text-black bg-maingray rounded-6 py-[14px] px-md transition-colors hover:bg-primary-light hover:text-white active:bg-primary-light active:text-white;
+  } */
+  
+}

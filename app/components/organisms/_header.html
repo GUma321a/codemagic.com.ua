@@ -1,0 +1,24 @@
+<header class="header absolute py-[20px] inset-x-0 top-0 z-50">
+    <div class="header__container mx-auto w-full px-sm lg:px-md xl:px-2xl">
+      <div class="header__navbar flex justify-between items-center w-full">
+          <div class="header__logo z-110 max-w-[200px]">
+            <a href="./index.html" class="header__logo-link"><img class="max-w-full" src="images/logo.png" alt="Logo"/></a>
+          </div>
+          <nav class="header__menu block">
+            <ul class="header__menu-list flex z-100 fixed flex-col right-0 top-0 bottom-0 left-full w-full h-full bg-maingray m-0 p-0 justify-start text-left transition-all duration-300 overflow-x-hidden overflow-y-auto overscroll-y-contain pt-120px px-md lg:z-1 lg:static lg:flex-row lg:bg-transparent lg:overflow-x-visible lg:pt-0 lg:px-0">
+              <li class="header__menu-list-item mr-xl"><a class="header__menu-list-link menu-link py-md border-b-gray-200 border-b w-full transition-colors hover:text-primary-light lg:py-0 lg:border-none" href="#features">About me</a></li>
+              <li class="header__menu-list-item mr-xl"><a class="header__menu-list-link menu-link py-md border-b-gray-200 border-b w-full transition-colors hover:text-primary-light lg:py-0 lg:border-none" href="https://docs.gigs.com/">Services</a></li>
+              <li class="header__menu-list-item mr-xl"><a class="header__menu-list-link menu-link py-md w-full transition-colors hover:text-primary-light lg:py-0 lg:border-none" href="https://join.gigs.com/">My work</a></li>
+              <li class="header__menu-list-item mr-xl"><a class="header__menu-list-link menu-link py-md w-full transition-colors hover:text-primary-light lg:py-0 lg:border-none" href="https://join.gigs.com/">Contact me</a></li>
+              <ul class="header__menu-list-buttons flex mt-xs lg:hidden">
+                <li class="grow basis-1/2 mr-sm"><a href="https://dashboard.gigs.com/" class="header__button button-cta-m w-full">Log in</a></li>
+                <li class="grow basis-1/2"><a href="https://gigs.com/contact" class="header__button button-primary-m w-full">Book Demo</a></li>
+              </ul>
+            </ul>
+          </nav>
+          <div class="header__burger block relative h-[18px] w-[20px] z-100 cursor-pointer before:absolute after:absolute before:h-[2px] after:h-[2px] before:w-full after:w-full before:bg-black after:bg-black transition-all before:top-0 after:bottom-0 before:duration-300 after:duration-300 before:rounded-71 after:rounded-71 lg:hidden">
+            <span class="absolute top-xs right-0 w-full bg-black h-[2px] transition-all scale-100 duration-300 rounded-71"></span>
+          </div>
+      </div>
+    </div>
+  </header>

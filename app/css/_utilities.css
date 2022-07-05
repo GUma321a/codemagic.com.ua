@@ -1,0 +1,10 @@
+@layer utilities{
+
+  html:not(.no-js) .fade-up{
+    @apply opacity-0 translate-y-[100px] duration-500 transition-all ease-fade-in;
+  }
+
+  html:not(.no-js) .fade-up.animate{
+    @apply translate-y-0 opacity-100;
+  }
+}
