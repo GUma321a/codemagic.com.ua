@@ -5,10 +5,19 @@
   }
 
   body{
-    @apply font-primary font-normal leading-150 bg-third-light text-white;
+    @apply font-primary font-normal leading-150 bg-third-light text-white text-16;
   }
 
   a{
     @apply inline-block;
+  }
+
+  img{
+    @apply object-cover object-center;
+  }
+
+  input,
+  textarea{
+    background: inherit;
   }
 }

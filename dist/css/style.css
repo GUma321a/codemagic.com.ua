@@ -201,11 +201,11 @@ Prevent resizing textareas horizontally by default.
 2. Set the default placeholder color to the user's configured gray 400 color.
 */input::-moz-placeholder, textarea::-moz-placeholder {
   opacity: 1; /* 1 */
-  color: #B8B8B8; /* 2 */
+  color: rgba(255, 255, 255, 0.7); /* 2 */
 }input::placeholder,
 textarea::placeholder {
   opacity: 1; /* 1 */
-  color: #B8B8B8; /* 2 */
+  color: rgba(255, 255, 255, 0.7); /* 2 */
 }/*
 Set the default cursor for buttons.
 */button,
@@ -241,13 +241,22 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(21 19 26 / var(--tw-bg-opacity));
   font-family: Jost, sans-serif;
+  font-size: 16px;
   font-weight: 400;
   line-height: 150%;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }a{
   display: inline-block;
-}*, ::before, ::after{
+}img{
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}input,
+  textarea{
+    background: inherit;
+  }*, ::before, ::after{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -414,16 +423,17 @@ video {
   font-size: 40px;
   font-weight: 500;
   line-height: 145%;
+  color: rgba(255, 255, 255, 0.85);
 }.heading-h3{
   font-family: Jost, sans-serif;
   font-size: 32px;
   font-weight: 500;
   line-height: 150%;
-}.body-text-xl{
-  font-family: Jost, sans-serif;
+}.heading-h4{
+  font-family: Poppins, sans-serif;
   font-size: 20px;
-  font-weight: 400;
-  line-height: 160%;
+  font-weight: 500;
+  line-height: 145%;
 }.body-text-m{
   font-family: Jost, sans-serif;
   font-size: 24px;
@@ -434,6 +444,20 @@ video {
   font-size: 14px;
   font-weight: 400;
   line-height: 143%;
+}.button-link-m{
+  font-family: Jost, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+}.caption-s{
+  margin-bottom: 24px;
+  font-family: Jost, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 0.05em;
+  color: rgba(255, 255, 255, 0.85);
 }.menu-link{
   font-family: Poppins, sans-serif;
   font-size: 16px;
@@ -500,13 +524,19 @@ video {
 }.mx-auto{
   margin-left: auto;
   margin-right: auto;
+}.my-160{
+  margin-top: 160px;
+  margin-bottom: 160px;
+}.my-80{
+  margin-top: 80px;
+  margin-bottom: 80px;
 }.mb-\[96px\]{
   margin-bottom: 96px;
 }.mb-2xl{
   margin-bottom: 48px;
 }.mb-xl{
   margin-bottom: 40px;
-}.ml-32{
+}.ml-lg{
   margin-left: 32px;
 }.ml-\[21px\]{
   margin-left: 21px;
@@ -516,16 +546,32 @@ video {
   margin-top: 8px;
 }.mr-sm{
   margin-right: 16px;
+}.mb-80{
+  margin-bottom: 80px;
+}.mb-lg{
+  margin-bottom: 32px;
+}.mt-\[200px\]{
+  margin-top: 200px;
+}.mb-md{
+  margin-bottom: 24px;
+}.mb-\[12px\]{
+  margin-bottom: 12px;
 }.mt-\[188px\]{
   margin-top: 188px;
 }.mb-\[160px\]{
   margin-bottom: 160px;
-}.mb-md{
-  margin-bottom: 24px;
 }.mb-\[4px\]{
   margin-bottom: 4px;
+}.mt-lg{
+  margin-top: 32px;
+}.mt-\[64px\]{
+  margin-top: 64px;
+}.mt-xl{
+  margin-top: 40px;
 }.block{
   display: block;
+}.inline-block{
+  display: inline-block;
 }.flex{
   display: flex;
 }.hidden{
@@ -536,10 +582,22 @@ video {
   height: 18px;
 }.h-\[2px\]{
   height: 2px;
+}.h-\[412px\]{
+  height: 412px;
+}.h-\[581px\]{
+  height: 581px;
+}.h-2xl{
+  height: 48px;
+}.max-h-full{
+  max-height: 100%;
+}.min-h-full{
+  min-height: 100%;
 }.w-full{
   width: 100%;
 }.w-\[20px\]{
   width: 20px;
+}.w-2xl{
+  width: 48px;
 }.max-w-\[565px\]{
   max-width: 565px;
 }.max-w-\[96px\]{
@@ -548,10 +606,18 @@ video {
   max-width: 200px;
 }.max-w-full{
   max-width: 100%;
+}.max-w-\[624px\]{
+  max-width: 624px;
+}.flex-60{
+  flex: 0 1 60%;
 }.flex-65{
   flex: 0 1 65%;
 }.flex-30{
   flex: 0 1 30%;
+}.flex-50{
+  flex: 0 1 50%;
+}.flex-45{
+  flex: 0 1 45%;
 }.grow{
   flex-grow: 1;
 }.basis-1\/2{
@@ -562,18 +628,28 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }.cursor-pointer{
   cursor: pointer;
+}.resize-none{
+  resize: none;
 }.resize{
   resize: both;
 }.flex-col{
   flex-direction: column;
+}.flex-wrap{
+  flex-wrap: wrap;
+}.items-start{
+  align-items: flex-start;
 }.items-center{
   align-items: center;
 }.justify-start{
   justify-content: flex-start;
 }.justify-between{
   justify-content: space-between;
+}.gap-32{
+  gap: 8rem;
 }.gap-\[78px\]{
   gap: 78px;
+}.gap-lg{
+  gap: 32px;
 }.overflow-hidden{
   overflow: hidden;
 }.overflow-y-auto{
@@ -584,12 +660,21 @@ video {
   overscroll-behavior-y: contain;
 }.rounded-full{
   border-radius: 50%;
+}.border-y{
+  border-top-width: 1px;
+  border-bottom-width: 1px;
 }.border-b{
   border-bottom-width: 1px;
+}.border-solid{
+  border-style: solid;
+}.border-gray-500{
+  border-color: rgba(255, 255, 255, 0.2);
+}.border-gray-200{
+  border-color: rgba(255, 255, 255, 0.6);
 }.border-b-gray-200{
   border-bottom-color: rgba(255, 255, 255, 0.6);
 }.bg-third-dark{
-  background-color: rgba(11, 10, 12, 0.87);;
+  background-color: rgba(11, 10, 12, 0.87);
 }.bg-maingray{
   --tw-bg-opacity: 1;
   background-color: rgb(247 244 241 / var(--tw-bg-opacity));
@@ -598,6 +683,10 @@ video {
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }.p-0{
   padding: 0px;
+}.p-sm{
+  padding: 16px;
+}.p-\[10px\]{
+  padding: 10px;
 }.py-\[20px\]{
   padding-top: 20px;
   padding-bottom: 20px;
@@ -610,12 +699,36 @@ video {
 }.py-md{
   padding-top: 24px;
   padding-bottom: 24px;
+}.py-\[128px\]{
+  padding-top: 128px;
+  padding-bottom: 128px;
+}.py-80{
+  padding-top: 80px;
+  padding-bottom: 80px;
+}.py-160{
+  padding-top: 160px;
+  padding-bottom: 160px;
+}.px-2xl{
+  padding-left: 48px;
+  padding-right: 48px;
+}.py-\[50px\]{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}.py-sm{
+  padding-top: 16px;
+  padding-bottom: 16px;
 }.pt-96{
   padding-top: 96px;
-}.pb-32{
+}.pb-lg{
   padding-bottom: 32px;
+}.pl-\[65px\]{
+  padding-left: 65px;
+}.pt-xl{
+  padding-top: 40px;
 }.text-left{
   text-align: left;
+}.text-center{
+  text-align: center;
 }.text-16{
   font-size: 16px;
 }.uppercase{
@@ -627,6 +740,18 @@ video {
 }.text-gray-600{
   --tw-text-opacity: 1;
   color: rgb(143 143 143 / var(--tw-text-opacity));
+}.text-gray-400{
+  color: rgba(255, 255, 255, 0.7);
+}.text-primary-dark{
+  --tw-text-opacity: 1;
+  color: rgb(203 121 177 / var(--tw-text-opacity));
+}.text-secondary-dark{
+  --tw-text-opacity: 1;
+  color: rgb(222 221 223 / var(--tw-text-opacity));
+}.text-gray-500{
+  color: rgba(255, 255, 255, 0.2);
+}.opacity-50{
+  opacity: 0.5;
 }.transition-all{
   transition-property: all;
   transition-timing-function: ease;
@@ -639,6 +764,8 @@ video {
   transition-duration: 200ms;
 }.duration-300{
   transition-duration: 300ms;
+}.duration-200{
+  transition-duration: 200ms;
 }html:not(.no-js) .fade-up{
   --tw-translate-y: 100px;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -739,16 +866,35 @@ video {
 }.before\:top-0::before{
   content: var(--tw-content);
   top: 0px;
+}.before\:left-0::before{
+  content: var(--tw-content);
+  left: 0px;
+}.before\:top-\[50\%\]::before{
+  content: var(--tw-content);
+  top: 50%;
 }.before\:h-\[2px\]::before{
   content: var(--tw-content);
   height: 2px;
+}.before\:h-lg::before{
+  content: var(--tw-content);
+  height: 32px;
 }.before\:w-full::before{
   content: var(--tw-content);
   width: 100%;
+}.before\:w-lg::before{
+  content: var(--tw-content);
+  width: 32px;
+}.before\:translate-y-\[-50\%\]::before{
+  content: var(--tw-content);
+  --tw-translate-y: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }.before\:bg-black::before{
   content: var(--tw-content);
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}.before\:bg-\[url\(\'\/images\/decor\/services-icon\.svg\'\)\]::before{
+  content: var(--tw-content);
+  background-image: url('/images/decor/services-icon.svg');
 }.before\:duration-300::before{
   content: var(--tw-content);
   transition-duration: 300ms;
@@ -771,6 +917,11 @@ video {
 }.after\:duration-300::after{
   content: var(--tw-content);
   transition-duration: 300ms;
+}.hover\:text-primary-light:hover{
+  --tw-text-opacity: 1;
+  color: rgb(255 24 208 / var(--tw-text-opacity));
+}.hover\:duration-200:hover{
+  transition-duration: 200ms;
 }@media (min-width: 1000px){.lg\:static{
     position: static;
   }.lg\:z-1{

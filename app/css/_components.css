@@ -5,7 +5,7 @@
     @apply font-primary font-semibold text-74 leading-127 tracking-tight;
   }
   .heading-h2{
-    @apply font-primary font-medium text-40 leading-145;
+    @apply font-primary font-medium text-40 leading-145 text-gray-300;
   }
   .heading-h3{
     @apply font-primary font-medium text-32 leading-150;
@@ -15,9 +15,6 @@
   }
   
   
-  .body-text-xl{
-    @apply font-primary font-normal text-20 leading-160;
-  }
   .body-text-l{
     @apply font-primary font-normal text-20 leading-160;
   }
@@ -28,12 +25,15 @@
     @apply font-primary font-normal text-14 leading-143;
   }
 
+  .button-link-m {
+    @apply font-primary font-medium text-18 leading-150 tracking-tight;
+  }
   .button-link-s{
     @apply font-primary font-medium text-16 leading-150 tracking-tight;
   }
 
-  .caprion-s{
-    @apply font-primary font-medium text-16 leading-150 tracking-tightest;
+  .caption-s{
+    @apply font-primary font-medium text-16 leading-150 tracking-tightest text-gray-300 mb-md;
   }
 
   .menu-link{

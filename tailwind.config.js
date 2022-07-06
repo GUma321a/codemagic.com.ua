@@ -25,6 +25,7 @@ module.exports = {
     fontSize: {
       14: "14px",
       16: "16px",
+      18: "18px",
       20: "20px",
       24: "24px",
       32: "32px",
@@ -52,11 +53,17 @@ module.exports = {
     colors: {
       transparent: "transparent",
       current: "currentColor",
-      primary: "#CB79B1",
-      secondary: "#DB79B7",
+      primary: {
+        light: "#FF18D0",
+        dark: "#CB79B1",
+      },
+      secondary: {
+        light: "#DB79B7",
+        dark: "#DEDDDF",
+      },
       third: {
         light: "#15131A",
-        dark: "rgba(11, 10, 12, 0.87);",
+        dark: "rgba(11, 10, 12, 0.87)",
       },
       system: {
         error: "#FF4D35",
@@ -67,8 +74,8 @@ module.exports = {
         100: "#F9F9F9",
         200: "rgba(255, 255, 255, 0.6)",
         300: "rgba(255, 255, 255, 0.85)",
-        400: "#B8B8B8",
-        500: "#A3A3A3",
+        400: "rgba(255, 255, 255, 0.7)",
+        500: "rgba(255, 255, 255, 0.2)",
         600: "#8F8F8F",
         700: "#717070",
         800: "#525252",
@@ -88,8 +95,11 @@ module.exports = {
 
     extend: {
       flex: {
-        '30' : '0 1 30%',
-        '65' : '0 1 65%',
+        30: "0 1 30%",
+        45: "0 1 45%",
+        50: "0 1 50%",
+        60: "0 1 60%",
+        65: "0 1 65%",
       },
 
       transitionTimingFunction: {
@@ -116,8 +126,9 @@ module.exports = {
         xl: "40px",
         "2xl": "48px",
 
-        32: "32px",
+        80: "80px",
         96: "96px",
+        160: "160px",
       },
 
       backgroundImage: {
