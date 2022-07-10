@@ -2,66 +2,48 @@
 
   /* Typography */
   .heading-h1{
-    @apply font-primary font-semibold text-74 leading-127 tracking-tight;
+    @apply font-primary font-semibold text-32 leading-127 tracking-tight sm:text-40 md:text-74;
   }
   .heading-h2{
-    @apply font-primary font-medium text-40 leading-145 text-gray-300;
+    @apply font-primary font-medium text-24 sm:text-32 md:text-40 leading-145 text-gray-300;
   }
   .heading-h3{
-    @apply font-primary font-medium text-32 leading-150;
+    @apply font-primary font-medium text-18 sm:text-24 md:text-32 leading-150;
   }
   .heading-h4{
-    @apply font-secondary font-medium text-20 leading-145;
+    @apply font-secondary font-medium text-16 sm:text-20 leading-145;
   }
   
   
   .body-text-l{
-    @apply font-primary font-normal text-20 leading-160;
+    @apply font-primary font-normal text-16 sm:text-18 md:text-20 leading-160;
   }
   .body-text-m{
-    @apply font-primary font-normal text-24 leading-150;
+    @apply font-primary font-normal text-18 sm:text-20 md:text-24 leading-150;
   }
   .body-text-s{
-    @apply font-primary font-normal text-14 leading-143;
+    @apply font-primary font-normal text-[12px] sm:text-16 leading-143;
   }
 
   .button-link-m {
-    @apply font-primary font-medium text-18 leading-150 tracking-tight;
+    @apply font-primary font-medium text-14 sm:text-16 md:text-18 leading-150 tracking-tight;
   }
   .button-link-s{
-    @apply font-primary font-medium text-16 leading-150 tracking-tight;
+    @apply font-primary font-medium text-[12px] sm:text-16 leading-150 tracking-tight;
   }
 
   .caption-s{
-    @apply font-primary font-medium text-16 leading-150 tracking-tightest text-gray-300 mb-md;
+    @apply font-primary font-medium text-14 leading-150 tracking-tightest text-gray-300 mb-md sm:text-16;
   }
 
   .menu-link{
-    @apply font-secondary font-medium text-16 leading-150;
+    @apply font-secondary font-medium text-[12px] sm:text-16 leading-150;
   }
 
 
 
   /* Buttons */
-  /* .button-cta-l{
-    @apply button-link-s text-center text-white bg-primary-light rounded-8 py-[17px] px-[28px] transition-colors hover:bg-primary-normal active:bg-primary-dark;
-  } */
   .button-cta-m{
-    @apply button-link-s text-center text-white bg-button rounded-43 py-[17px] px-2xl;
+    @apply button-link-s text-center text-white bg-button rounded-43 py-[14px] px-md md:py-[17px] md:px-2xl;
   }
-
-  /* .button-primary-l{
-    @apply button-link-l text-center text-white bg-primary-dark rounded-8 py-[17px] px-[28px] transition-colors hover:bg-primary-light active:bg-primary-normal;
-  }
-  .button-primary-m{
-    @apply button-link-m text-center text-white bg-primary-dark rounded-6 py-[14px] px-md transition-colors hover:bg-primary-light active:bg-primary-normal;
-  }
-
-  .button-ghost-l{
-    @apply button-link-l text-center text-black bg-maingray rounded-8 py-[17px] px-[28px] transition-colors hover:bg-primary-light hover:text-white active:bg-primary-light active:text-white;
-  }
-  .button-ghost-m{
-    @apply button-link-l text-center text-black bg-maingray rounded-6 py-[14px] px-md transition-colors hover:bg-primary-light hover:text-white active:bg-primary-light active:text-white;
-  } */
-  
 }
