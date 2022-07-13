@@ -2,13 +2,13 @@
 
   /* Typography */
   .heading-h1{
-    @apply font-primary font-semibold text-32 leading-127 tracking-tight sm:text-40 md:text-74;
+    @apply font-primary font-semibold text-32 leading-127 tracking-tight sm:text-40 md:text-[56px] lg:text-[62px] xl:text-[72px];
   }
   .heading-h2{
-    @apply font-primary font-medium text-24 sm:text-32 md:text-40 leading-145 text-gray-300;
+    @apply font-primary font-medium text-32 md:text-40 leading-145 text-gray-300;
   }
   .heading-h3{
-    @apply font-primary font-medium text-18 sm:text-24 md:text-32 leading-150;
+    @apply font-primary font-medium text-24 md:text-[28px] lg:text-32 leading-150;
   }
   .heading-h4{
     @apply font-secondary font-medium text-16 sm:text-20 leading-145;
@@ -22,28 +22,38 @@
     @apply font-primary font-normal text-18 sm:text-20 md:text-24 leading-150;
   }
   .body-text-s{
-    @apply font-primary font-normal text-[12px] sm:text-16 leading-143;
+    @apply font-primary font-normal text-16 leading-143;
   }
 
   .button-link-m {
-    @apply font-primary font-medium text-14 sm:text-16 md:text-18 leading-150 tracking-tight;
+    @apply font-primary font-medium text-16 md:text-18 leading-150 tracking-tight;
   }
   .button-link-s{
-    @apply font-primary font-medium text-[12px] sm:text-16 leading-150 tracking-tight;
+    @apply font-primary font-medium text-16 leading-150 tracking-tight;
   }
 
   .caption-s{
-    @apply font-primary font-medium text-14 leading-150 tracking-tightest text-gray-300 mb-md sm:text-16;
+    @apply font-primary font-medium text-16 leading-150 tracking-tightest text-gray-300 mb-md;
   }
 
   .menu-link{
-    @apply font-secondary font-medium text-[12px] sm:text-16 leading-150;
+    @apply font-secondary font-medium text-16 leading-150;
   }
 
 
 
   /* Buttons */
   .button-cta-m{
-    @apply button-link-s text-center text-white bg-button rounded-43 py-[14px] px-md md:py-[17px] md:px-2xl;
+    @apply button-link-s text-center text-white duration-[0.2s] bg-primary-light rounded-43 py-[14px] px-md md:py-[17px] md:px-2xl hover:bg-primary-dark focus:bg-primary-dark;
+  }
+
+  .button-link-arrow{
+    @apply relative pr-lg transition-all after:absolute after:bg-white after:w-[25px] after:h-[12px] after:right-0 after:top-[50%] after:translate-y-[-50%] hover:text-primary-dark hover:after:text-primary-dark after:transition-all hover:after:right-[-15px] hover:after:bg-primary-dark;
+  }
+  .button-link-arrow::after{
+    -webkit-mask: url(../images/icons/link-arrow.svg) no-repeat 50% 50%;
+    mask: url(../images/icons/link-arrow.svg) no-repeat 50% 50%;
+    -webkit-mask-size: cover;
+    mask-size: cover;
   }
 }

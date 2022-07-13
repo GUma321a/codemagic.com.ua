@@ -19,85 +19,40 @@
 }
 
 
-
-/* Fill svg in link on hover */
-/* .link-with-svg:hover svg path {
-  @apply fill-primary-light transition-all;
-} */
-
-
-/* Features-overviw active states */
-/* .features-overview__tab{
-  @apply opacity-50;
-}
-.features-overview__tab.active{
-  @apply opacity-100 relative before:absolute before:left-0 before:top-0 before:bg-secondary-light before:w-[4px] before:h-full before:rounded-10 before:transition-all;
-}
-.features-overview__content-item {
-  @apply hidden;
-}
-
-.features-overview__content-item.active{
-  @apply block;
-} */
-
-
-/* Icons-table list */
-/* .icons-table__list-item:first-of-type{
-  @apply border-t;
-}
-.icons-table__list-item:hover {
-  @apply border-b-secondary-dark;
-}
-.icons-table__list-item:hover .icons-table__list-item-title{
-  @apply text-secondary-dark;
-}
-.icons-table__list-item:hover .icons-table__list-item-subtitle-text{
-  @apply hidden;
-}
-.icons-table__list-item:hover .icons-table__list-item-subtitle-hover{
-  @apply inline;
-}
-@screen lg {
-  .icons-table__list.hide-list{
-    @apply opacity-0 pointer-events-none;
-  }
-} */
-
-
-/* Icons-table photos */
-/* @screen lg {
-  .icons-table__photos:hover .icons-table__photo:nth-child(1){
-    @apply translate-y-[30%] translate-x-[-110%] rotate-[-17deg];
-  }
-  .icons-table__photos:hover .icons-table__photo:nth-child(2){
-    @apply translate-y-[-20%] translate-x-[-180%] rotate-[5deg];
-  }
-  .icons-table__photos:hover .icons-table__photo:nth-child(3){
-    @apply translate-y-[0%] translate-x-[20%] rotate-[28deg];
-  }
-}
-@screen xl {
-  .icons-table__photos:hover .icons-table__photo:nth-child(1){
-    @apply translate-y-[30%] translate-x-[-150%] rotate-[-17deg];
-  }
-  .icons-table__photos:hover .icons-table__photo:nth-child(2){
-    @apply translate-y-[-20%] translate-x-[-220%] rotate-[5deg];
-  }
-  .icons-table__photos:hover .icons-table__photo:nth-child(3){
-    @apply translate-y-[0%] translate-x-[10%] rotate-[28deg];
-  }
-} */
-
-
 /* Container */
-@media (min-width: 1100px){
-  .container{
-    @apply box-content;
-  }
-}
 @screen xl {
   .container{
     @apply max-w-[1280px];
   }
+}
+
+.link-with-svg svg path {
+  @apply transition-colors;
+}
+
+.link-with-svg:hover svg path{
+  @apply fill-primary-light;
+}
+
+.projects__item:hover .projects__hover{
+  @apply opacity-100;
+}
+
+
+
+
+.form-status .success-text{
+  @apply hidden;
+}
+
+.form-status.success .success-text{
+  @apply inline-block;
+}
+
+.form-status.success .send-text{
+  @apply hidden;
+}
+
+.form-status.success{
+  @apply bg-system-success;
 }

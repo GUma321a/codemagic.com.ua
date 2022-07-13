@@ -1,42 +1,6 @@
-// ************************** Burger Menu ************************** //
-function burgerMenu() {
-  const burger  = document.querySelector(".header__burger");
-  const menu    = document.querySelector(".header__menu-list");
-
-  burger.addEventListener("click", () => {
-    if (!menu.classList.contains("header__menu-list-active")) {
-      menu.classList.add("header__menu-list-active");
-      burger.classList.add("active-burger");
-      document.body.style.overflow = "hidden";
-    } else {
-      menu.classList.remove("header__menu-list-active");
-      burger.classList.remove("active-burger");
-      document.body.style.overflow = "visible";
-    }
-  });
-
-  menu.addEventListener("click", handleMenuClick);
-  function handleMenuClick(event) {
-    if (event.target instanceof HTMLAnchorElement) {
-      menu.classList.remove("header__menu-list-active");
-      burger.classList.remove("active-burger");
-      document.body.style.overflow = "visible";
-    }
-  }
-
-  window.addEventListener("resize", () => {
-    if (window.innerWidth > 999) {
-      menu.classList.remove("header__menu-list-active");
-      burger.classList.remove("active-burger");
-    }
-  });
-}
-burgerMenu();
-// ************************** Burger Menu ************************** //
-
 // ************************** Telegram Form ************************** //
-const telegramChatID = "-780517028";
-const telegramBotToken = "bot5572452932:AAEqjC4_b6ZKHRJyBeTCK0iQxVowJ_qiUVA";
+const telegramChatID = '-1001500417277';
+const telegramBotToken = 'bot5104551091:AAEqt6v67QzDOYve_lvjDSj34y_cEYMJpqA';
 const telegramURL = `https://api.telegram.org/${telegramBotToken}/sendMessage`;
 const telegramForm = document.querySelectorAll('.telegram-form');
 const messageStatus = document.querySelector('.form-status');

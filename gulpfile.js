@@ -14,10 +14,10 @@ const ftpConfig = JSON.parse(fs.readFileSync('./ftp-settings.json'));
 const connect = ftp.create(ftpConfig);
 
 
-function deploy() {
-  return src(['dist/**/*.*'])
-    .pipe(connect.newer('www/deployhost.ga/projects/gigs/'))
-    .pipe(connect.dest('www/deployhost.ga/projects/gigs/'));
+function deploy(){
+  return src(["dist/**/*.*"])
+    .pipe(connect.newer("www/codemagic.com.ua/"))
+    .pipe(connect.dest("www/codemagic.com.ua/"));
 }
 
 function html() {

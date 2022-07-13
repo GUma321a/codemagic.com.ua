@@ -1,0 +1,16 @@
+.form-status .success-text {
+  display: none;
+}
+
+.form-status.success {
+  background-color: #2eaa4d;
+  color: #fff;
+}
+
+.send-text {
+  display: none;
+}
+
+.success-text {
+  display: inline-block;
+}

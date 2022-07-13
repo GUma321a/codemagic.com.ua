@@ -5,11 +5,11 @@
   }
 
   body{
-    @apply font-primary font-normal leading-150 bg-third-light text-white text-14 md:text-16;
+    @apply font-primary font-normal leading-150 bg-third-light text-white text-16;
   }
 
   a{
-    @apply inline-block;
+    @apply inline-block transition-all;
   }
 
   img{
@@ -19,5 +19,6 @@
   input,
   textarea{
     background: inherit;
+    outline: none;
   }
 }

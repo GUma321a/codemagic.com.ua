@@ -15,6 +15,7 @@ module.exports = {
       lg: "1000px",
       xl: "1300px",
       "2xl": "1460px",
+      450: "450px",
     },
 
     fontFamily: {
@@ -54,8 +55,8 @@ module.exports = {
       transparent: "transparent",
       current: "currentColor",
       primary: {
-        light: "#FF18D0",
-        dark: "#CB79B1",
+        light: "#3b82f6",
+        dark: "#1e40af",
       },
       secondary: {
         light: "#DB79B7",
@@ -77,7 +78,7 @@ module.exports = {
         400: "rgba(255, 255, 255, 0.7)",
         500: "rgba(255, 255, 255, 0.2 )",
         600: "#8F8F8F",
-        700: "#717070",
+        700: "rgba(0, 0, 0, 0.64)",
         800: "#525252",
         900: "#3D3D3D",
       },
@@ -95,8 +96,9 @@ module.exports = {
 
     extend: {
       flex: {
+        27: "1 1 27%",
         30: "0 1 30%",
-        43: "0 1 43%",
+        36: "1 1 36%",
         45: "0 1 45%",
         50: "0 1 50%",
         60: "0 1 60%",
@@ -128,13 +130,10 @@ module.exports = {
         xl: "40px",
         "2xl": "48px",
 
+        60: "60px",
         80: "80px",
         96: "96px",
         160: "160px",
-      },
-
-      backgroundImage: {
-        button: "linear-gradient(104.12deg, #BE7CFF 8.14%, #F8766D 163.79%)",
       },
     },
   },

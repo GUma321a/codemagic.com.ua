@@ -1,35 +1,31 @@
-<footer class="footer bg-third-dark pt-96 pb-lg">
+<footer class="footer bg-third-dark pt-[40px] lg:pt-96 pb-lg">
   <div class="container">
-    <div class="footer__top flex flex-wrap justify-between mb-[96px]">
-      <div class="footer__text max-w-[565px] mb-lg lg:mb-0">
-        <h2 class="footer__text-title heading-h2 mb-2xl">
+    <div class="footer__top flex flex-wrap mb-2xl lg:mb-[96px] lg:justify-between">
+      <div class="footer__text max-w-[450px] mb-lg lg:mb-0 xl:max-w-[565px]">
+        <p class="footer__text-title heading-h3 mb-2xl">
           Have an idea? I can help you to Start your project
-        </h2>
+        </p>
         <p class="footer__text-subtitle body-text-m text-gray-200">
           Say hello to me 👋
         </p>
-        <h3 class="footer__text-mail heading-h3 text-gray-300"><a href="mailto:alexandrchernicov@gmail.com">
+        <p class="footer__text-mail heading-h4 text-gray-300 hover:text-white transition-colors"><a href="mailto:alexandrchernicov@gmail.com">
           alexandrchernicov@gmail.com
-        </a></h3>
+        </a></p>
       </div>
       <div class="footer__user">
-        <div class="footer__user-wrapper flex justify-start mb-xl">
-          <div class="footer__user-photo"><img class="rounded-full max-w-[96px]" src="images/photos/footer-photo.jpg" alt="photo"></div>
-          <div class="footer__user-inner ml-lg text-gray-300">
-            <h3 class="footer__user-name heading-h3">
+        <div class="footer__user flex justify-start items-center mb-sm sm:mb-xl">
+          <div class="footer__user-photo"><img class="rounded-full w-[50px] h-[50px] sm:w-[96px] sm:h-[96px]" src="images/photos/preview-photo-mini.jpg" alt="photo"></div>
+          <div class="footer__user-inner ml-[10px] sm:ml-lg text-gray-300">
+            <p class="footer__user-name heading-h3">
               Alexandr Chernikov
-            </h3>
-            <p class="footer__user-vacancy body-text-m">
+            </p>
+            <p class="footer__user-position body-text-m">
               Web Developer
             </p>
           </div>
         </div>
-        <ul class="footer__user-links flex">
-          <li class="footer__user-links-item">@@include('../../images/icons/Facebook.svg')</li>
-          <li class="footer__user-links-item ml-[21px]">@@include('../../images/icons/Twitter.svg')</li>
-          <li class="footer__user-links-item ml-[21px]">@@include('../../images/icons/Dribbble.svg')</li>
-          <li class="footer__user-links-item ml-[21px]">@@include('../../images/icons/Instagram.svg')</li>
-          <li class="footer__user-links-item ml-[21px]">@@include('../../images/icons/Behance.svg')</li>
+        <ul class="footer__social flex">
+          <li class="footer__social-item"><a class="link-with-svg transition-colors" target="_blank" href="https://www.instagram.com/gu_ma_ink/">@@include('../../../dist/images/icons/Instagram.svg')</a></li>
         </ul>
       </div>
     </div>
@@ -37,17 +33,17 @@
       <div class="footer__copy body-text-s text-gray-600 order-1 mx-auto mt-xl md:order-none md:mt-0 md:order-0 md:m-0">
         WebCifra @2022
       </div>
-      <ul class="footer__menu menu-link flex justify-center">
-        <li class="fotter__menu-item"><a href="#">
+      <ul class="footer__menu menu-link text-center flex justify-center flex-col sm:flex-row">
+        <li class="fotter__menu-item transition-colors hover:text-primary-light"><a href="@@webRoot/about.html">
           About me
         </a></li>
-        <li class="fotter__menu-item ml-sm sm:ml-lg"><a href="#">
+        <li class="fotter__menu-item transition-colors hover:text-primary-light mt-sm sm:mt-0 sm:ml-lg"><a href="#">
           Services
         </a></li>
-        <li class="fotter__menu-item ml-sm sm:ml-lg"><a href="#">
+        <li class="fotter__menu-item transition-colors hover:text-primary-light mt-sm sm:mt-0 sm:ml-lg"><a href="@@webRoot/my-works.html">
           My Work
         </a></li>
-        <li class="fotter__menu-item ml-sm sm:ml-lg"><a href="#">
+        <li class="fotter__menu-item transition-colors hover:text-primary-light mt-sm sm:mt-0 sm:ml-lg"><a href="@@webRoot/contact.html">
           Contact me
         </a></li>
       </ul>
