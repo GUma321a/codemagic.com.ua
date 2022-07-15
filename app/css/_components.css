@@ -48,7 +48,7 @@
   }
 
   .button-link-arrow{
-    @apply relative pr-lg transition-all after:absolute after:bg-white after:w-[25px] after:h-[12px] after:right-0 after:top-[50%] after:translate-y-[-50%] hover:text-primary-dark hover:after:text-primary-dark after:transition-all hover:after:right-[-15px] hover:after:bg-primary-dark;
+    @apply relative pr-lg transition-all after:absolute after:bg-white after:w-[25px] after:h-[12px] after:right-0 after:top-[50%] after:translate-y-[-50%] hover:text-primary-light hover:after:text-primary-dark after:transition-all hover:after:right-[-15px] hover:after:bg-primary-light;
   }
   .button-link-arrow::after{
     -webkit-mask: url(../images/icons/link-arrow.svg) no-repeat 50% 50%;

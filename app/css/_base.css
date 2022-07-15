@@ -16,6 +16,10 @@
     @apply object-cover object-center;
   }
 
+  svg{
+    @apply w-full h-full;
+  }
+
   input,
   textarea{
     background: inherit;
